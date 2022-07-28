@@ -1,0 +1,501 @@
+/* ------------------------------------------ GENERAL ------------------------------------------ */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap");
+* {
+  font-family: "Raleway", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+/* GENERAL TEXT EDITS */
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #12153c;
+}
+.title2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #12153c;
+}
+.paragraph {
+  font-size: 18px;
+  font-weight: 500;
+}
+.paragraph2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.buton {
+  border-radius: 10px;
+  background: #12153c;
+  padding: 10px 10px 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.buton:hover {
+  background-color: #d0b608;
+  color: #12153c;
+  transition: ease-in all 0.3s;
+}
+.buton2 {
+  font-size: 17px;
+  transition: ease-in all 0.5s;
+  background-color: #fff;
+  color: #12153c;
+  border-radius: 10px;
+  padding: 13px 0px;
+  margin: 0 auto;
+  max-width: 200px;
+  width: 100%;
+  font-weight: bold;
+  display: block;
+  margin-top: 30px;
+  border-color: #12153c;
+}
+.buton2:hover {
+  background: #d0b608;
+  transition: ease-in all 0.3s;
+  color: #fff;
+}
+/* ------------------------------------------ NAVBAR ------------------------------------------ */
+.navbar {
+  background: #12153c;
+}
+.navbar a {
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.navbar a:hover {
+  color: #d0b608;
+}
+.dropdown-menu {
+  background-color: #12153c;
+}
+/* FOOTER */
+.footer-banner {
+  height: 243px;
+  background-image: url(images/cross_bottom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer {
+  padding-top: 100px;
+  background-color: #12153c;
+}
+.footer a {
+  text-decoration: none;
+  color: #ebce09;
+  font-weight: bold;
+}
+.footer a:hover {
+  color: #ffe25b;
+}
+.footer ul {
+  list-style: none;
+}
+.footer li {
+  color: white;
+  font-size: 10px;
+}
+.social {
+  color: white !important;
+}
+.social:hover {
+  background-color: #d0b608;
+}
+.copyright {
+  color: white;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 15px;
+}
+/* ------------------------------------------ BANNER ------------------------------------------ */
+.banner {
+  background-image: url(images/banner.png);
+  padding: 0px 0 200px 0;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+/* ------------------------------------------ CAROUSEL ------------------------------------------ */
+/* first=first slide, second=second slide */
+.banner-slide {
+  height: 500px;
+}
+.first {
+  background-color: rgba(2, 2, 2, 0.196);
+}
+.first h1 {
+  margin-top: 40px;
+  font-size: 110px;
+  font-weight: bold;
+  color: #ebce09;
+  padding-top: 100px;
+}
+.first h2 {
+  font-size: 45px;
+  color: white;
+  padding-bottom: 200px;
+}
+.second {
+  margin-top: 40px;
+  background-color: rgba(2, 2, 2, 0.196);
+  padding-bottom: 200px;
+}
+
+/* ------------------------------------------ ABOUT US HOME PAGE ------------------------------------------ */
+.about {
+  margin-top: 150px;
+  padding-bottom: 300px;
+}
+.aboutCard {
+  position: absolute;
+  height: 300px;
+  width: 900px;
+  border-radius: 20px;
+  display: flex;
+  transition: 0.5s;
+  border: 0;
+  background-color: #ffe25b;
+}
+.content-aboutCard {
+  margin: 30px;
+  padding-left: 10px;
+  width: 40%;
+}
+.aboutCard img {
+  position: absolute;
+  height: 650px;
+  top: -80%;
+  left: 30%;
+}
+.about-slide {
+  height: 700px;
+}
+
+/* ------------------------------------------ CONTACT US HOME PAGE ------------------------------------------ */
+.contact {
+  height: 800px;
+  background-color: #f2f2f2;
+}
+.contactCol {
+  margin-top: 150px;
+}
+.contactForm {
+  padding: 40px;
+  background: #12153c;
+  border-radius: 40px;
+}
+.contactForm .contactus {
+  border: inherit;
+  margin-bottom: 26px;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  border-bottom: #615e5e solid 1px;
+}
+.contactForm .textarea {
+  border: inherit;
+  margin-bottom: 20px;
+  width: 100%;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 30px;
+  border-bottom: #615e5e solid 1px;
+}
+
+#contact *::placeholder {
+  color: #fff;
+  opacity: 80%;
+}
+
+/* ------------------------------------------ PREVIEWPRODUCTS HOME PAGE ------------------------------------------ */
+.previewproducts {
+  padding-bottom: 100px;
+}
+.card-img {
+  height: 300px;
+}
+.card-overlay {
+  position: absolute;
+  top: 70%;
+  max-width: 525px;
+  width: 100%;
+  background-color: #12153c8f;
+}
+.pcard {
+  border-color: #ebce09;
+  margin: 5px;
+}
+.pcard:hover .card-img {
+  opacity: 0.5;
+  transition: ease-in all 0.3s;
+}
+/* ------------------------------------------ TESTIOMNIALS ------------------------------------------ */
+.testimonial {
+  padding: 90px 0 100px 0;
+  background-color: #f2f2f2;
+}
+.testimonial p {
+  color: #232324;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 10px;
+}
+.testimonial_Carousel {
+  background-color: white;
+  border: #9d9faf solid 1px;
+  padding: 40px 20px;
+}
+
+.testimonial_Carousel .carousel-caption {
+  position: inherit;
+  padding: 0;
+}
+
+.testimonial_box {
+  text-align: center;
+}
+
+.test_box {
+  padding: 30px 25px;
+}
+
+.margin_boot {
+  border-right: #9d9faf solid 2px;
+}
+
+.flot_right {
+  float: right;
+}
+
+.testimonial_Carousel .test_box1 {
+  text-align: center;
+}
+
+.testimonial_Carousel .test_box1 figure {
+  margin: 0;
+}
+
+.testimonial_Carousel .test_box1 figure img {
+  max-width: 206px;
+  border-radius: 200px;
+  border: #12153c solid 6px;
+}
+
+.testimonial_Carousel .test_box1 h4 {
+  font-size: 20px;
+  color: #12153c;
+  line-height: 18px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0;
+  padding-top: 15px;
+}
+
+.testimonial_Carousel .test_box i {
+  font-size: 17px;
+  line-height: 28px;
+  text-align: left;
+  display: block;
+}
+
+.testimonial_Carousel .test_box p {
+  font-size: 17px;
+  line-height: 28px;
+  color: #525251;
+  text-align: left;
+  padding-top: 20px;
+}
+/* ------------------------------------------ SERVICES PAGE  ------------------------------------------ */
+.servicesPage ul {
+  list-style: none;
+}
+.contactCard {
+  background: #ffe25b;
+  height: 283px;
+}
+.contactCard .contactContent {
+  width: 60%;
+  margin: 45px;
+}
+.contactCard img {
+  position: absolute;
+  height: 600px;
+  top: -79%;
+  left: 55%;
+}
+/* rulouri */
+.imgRulou {
+  margin: 20px;
+}
+.contentRulou {
+  margin: 20px;
+}
+
+/*
+
+
+
+
+
+
+*/
+/* ------------------------------------------ RESPONSIVENESS ------------------------------------------ */
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .aboutCard img {
+    height: 500px;
+    top: -20%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .aboutCard img {
+    height: 470px;
+    top: -19%;
+    left: 58%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contactCol {
+    margin-top: 10px;
+  }
+  /* ABOUT */
+  .about {
+    margin-top: 50px;
+    padding-bottom: 380px;
+  }
+  .aboutCard {
+    width: 360px;
+  }
+  .aboutCard img {
+    height: 250px;
+    top: 60%;
+    left: 2%;
+  }
+  .aboutCard .content-aboutCard {
+    margin: 5px;
+    width: 90%;
+  }
+  .aboutCard .content-aboutCard h2 {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  .aboutCard .content-aboutCard p {
+    font-size: 15px;
+  }
+  .aboutCard .content-aboutCard a {
+    border-radius: 10px;
+    padding: 8px 8px 8px;
+    font-size: 15px;
+  }
+  .about-slide {
+    height: 220px;
+  }
+  /* CONTACT */
+  .contact h1 {
+    margin-top: 60px;
+    font-size: 30px;
+  }
+  .contact p {
+    font-size: 15px;
+  }
+
+  /* PRODUCT */
+  .previewproducts h2 {
+    font-size: 30px;
+  }
+  .previewproducts p {
+    font-size: 15px;
+  }
+  .pcard {
+    height: 200px;
+  }
+  .card-img {
+    height: 200px;
+  }
+  .card-overlay {
+    top: 63%;
+    max-width: 340px;
+  }
+  /* BANNER */
+  .first h1 {
+    font-size: 70px;
+  }
+  .first h2 {
+    font-size: 30px;
+  }
+  /* TESTIOMONIALE */
+  .testimonial {
+    padding-bottom: 10px;
+  }
+  .testimonial_Carousel .test_box1 figure img {
+    max-width: 123px;
+  }
+  .testimonial p {
+    font-size: 15px;
+  }
+  .margin_boot {
+    border-right: none;
+  }
+  /* about page */
+  .aboutPage span {
+    font-size: 15px;
+  }
+  .aboutPage h1 {
+    font-size: 30px;
+  }
+  .aboutPage p {
+    font-size: 15px;
+  }
+  /* services page */
+  .servicesPage h1 {
+    font-size: 30px;
+  }
+  .servicesPage span {
+    font-size: 15px;
+  }
+  .servicesPage p {
+    font-size: 15px;
+  }
+  .contactCard .contactContent {
+    width: 85%;
+  }
+  .contactContent p {
+    font-size: 18px;
+  }
+  .contactContent a {
+    margin-top: 30px;
+  }
+  .contactCard img {
+    display: none;
+  }
+}

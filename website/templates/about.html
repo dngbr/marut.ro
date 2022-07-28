@@ -1,0 +1,58 @@
+{% extends "base.html" %} {% load static %} {% block main %}
+<div class="aboutPage">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 text-center">
+        <h1 class="title">Află povestea noastră</h1>
+        <p class="paragraph">
+          Suntem cei care îți oferă siguranța că geamurile tale vor rezista, că
+          o poți să dormi până la prânz dacă ai nevoie să te odihnești.<br />
+          Suntem o familie care înțelege că primul pas pentru a construi un
+          cămin este calitatea. <br />Suntem cei care nu ne lăsăm înfrânți de un
+          toc vechi sau un pervaz de lemn încăpățânat care nu vrea să fie dat
+          deoparte.<br />
+          Suntem cei care nu fac rabat de la calitate, indiferent de bugetul
+          tău.<br />Suntem cei care te ghidăm pas cu pas să alegi materialele
+          (și culorile) care se pliază perfect pe viziunea pe care o ai tu
+          despre casa ta. <br />Suntem cei care garantăm că vântul nu șuieră,
+          pervazul nu cade și insectele nu vin neinvitate în casă. <br />Suntem
+          cei care reparăm dacă se strică ceva din munca noastră.
+        </p>
+        <p class="paragraph2">Suntem MARUT.</p>
+        <p class="paragraph">Și susținem calitatea înainte de toate.</p>
+        <br />
+        <p class="paragraph2">
+          O afacere de familie, 10 ani de activitate, din 2012 până astăzi, din
+          județul Cluj în toată țara, chiar și în străinătate ne-am continuat
+          activitatea asigurându-ne întotdeauna ca avem clienți mulțumiți.
+        </p>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+  </div>
+  <div style="background-color: #f2f2f2; padding-top: 100px">
+    <div class="container">
+      <div
+        id="myCarousel"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="5000"
+      >
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item about-slide active">
+            <img src="{% static 'images/4.png' %}" width="100%" />
+          </div>
+          <div class="carousel-item about-slide">
+            <img src="{% static 'images/5.png' %}" width="100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock main %}

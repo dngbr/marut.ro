@@ -1,0 +1,82 @@
+{% extends "base.html" %} {% load static %} {% block main %}
+<div class="productsPage">
+  <div class="container">
+    <div class="row" style="margin-top: 30px">
+      <div class="previewproducts">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="title">Tipuri de produse</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row align-items-center no-gutters">
+              <div class="col-lg-6">
+                <a class="card bg-dark text-white pcard" href="/windows/">
+                  <img
+                    class="card-img"
+                    src="{% static 'images/window.png' %}"
+                    alt="Ferestre"
+                  />
+                  <div class="card-img-overlay">
+                    <div class="card-overlay">
+                      <h3 class="card-title">Ferestre</h3>
+                      <p class="card-text">Comfort și calitate</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a class="card bg-dark text-white pcard" href="/doors/">
+                  <img
+                    class="card-img"
+                    src="{% static 'images/door.png' %}"
+                    alt="Uși"
+                  />
+                  <div class="card-img-overlay">
+                    <div class="card-overlay">
+                      <h3 class="card-title">Uși</h3>
+                      <p class="card-text">Durabilitate și securitate</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a class="card bg-dark text-white pcard" href="/rulouri/">
+                  <img
+                    class="card-img"
+                    src="{% static 'images/rulou.png' %}"
+                    alt="Rulouri"
+                  />
+                  <div class="card-img-overlay">
+                    <div class="card-overlay">
+                      <h3 class="card-title">Rulouri</h3>
+                      <p class="card-text">Siguranță și design</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a class="card bg-dark text-white pcard" href="/accesories/">
+                  <img
+                    class="card-img"
+                    src="{% static 'images/insect.png' %}"
+                    alt="Accesorii"
+                  />
+                  <div class="card-img-overlay">
+                    <div class="card-overlay">
+                      <h3 class="card-title">Accesorii</h3>
+                      <p class="card-text">Utilitate și funcționalitate</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="padding: 5arut0px; background-color: #f2f2f2"></div>
+{% endblock main %}
